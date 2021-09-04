@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Tugas Praktikum 1</title>
+    </head>
+    <script lang="JavaScript">
+        function test(){
+            var nilai = document.grading.NILAI.value
+            if(nilai >= 93){
+                document.grading.Grade.value="A"
+            }else if(nilai >= 83){
+                document.grading.Grade.value="B"
+            }else if(nilai >= 75){
+                document.grading.Grade.value="C"
+            }else if(nilai >= 50){
+                document.grading.Grade.value="D"
+            }else if(nilai <= 49){
+                document.grading.Grade.value="E"
+            }else{
+                document.grading.Grade.value=" -"
+            }
+        }
+    </script>
+    <body>
+        <fieldset style="display: inline-block;">
+            <legend>Periksa Nilai</legend>
+            <form method="POST" name="grading">
+                <p>Nilai <input type="text" name="NILAI" size="5"><br></p>
+            
+                <p><input type="button" value="Cek" name="Cek" onclick=test()></p>
+                
+                <p>Keterangan : <input type="text" name="Grade" size="11"></p>
+            </form>
+        </fieldset>
+    </body>
+</html>

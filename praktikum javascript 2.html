@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Tugas Praktikum 2</title>
+    </head>
+    <script lang="JavaScript">  
+            function tampil(hasil_par){
+                document.hitung.hasil.value = hasil_par
+            }
+            function jumlahkan(nilai_a, nilai_b){
+                var res = Number(nilai_a) + Number(nilai_b)
+                tampil(res)
+            }
+            function kurangkan(nilai_a, nilai_b){
+                var res = nilai_a - nilai_b
+                tampil(res)
+            }
+            function kalikan(nilai_a, nilai_b){
+                var res = nilai_a * nilai_b
+                tampil(res)
+            }
+            function bagikan(nilai_a, nilai_b){
+                var res = nilai_a / nilai_b
+                tampil(res)
+            }
+    </script>
+    <body>
+        <fieldset style="display: inline-block;">
+            <legend>Operasi</legend>
+            <form method="POST" name="hitung">
+                <p>Nilai 1 <input type="text" name="nilaia" size="11"><br></p>
+                <p>Nilai 2 <input type="text" name="nilaib" size="11"><br></p>
+                <p>Hasil : <input type="text" name="hasil" size="22" readonly></p>
+                <input type="button" value="+" name="penjumlahan" onclick="jumlahkan(document.hitung.nilaia.value, document.hitung.nilaib.value)">
+                <input type="button" value="-" name="pengurangan" onclick="kurangkan(document.hitung.nilaia.value, document.hitung.nilaib.value)">
+                <input type="button" value="x" name="perkalian" onclick="kalikan(document.hitung.nilaia.value, document.hitung.nilaib.value)">
+                <input type="button" value="/" name="pembagian" onclick="bagikan(document.hitung.nilaia.value, document.hitung.nilaib.value)">
+            </form>
+        </fieldset> 
+    </body>
+</html>
