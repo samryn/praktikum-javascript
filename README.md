@@ -30,7 +30,7 @@
 
 ### Latihan operator switch
 ![ALT text](https://github.com/samryn/praktikum-javascript/blob/main/ss%20javascript/ss%20javascript%20operasi%20switch.png)
-![ALT text](https://github.com/samryn/praktikum-javascript/blob/main/ss%20javascript/ss%20javascript%20operasi%20switch.png)
+![ALT text](https://github.com/samryn/praktikum-javascript/blob/main/ss%20javascript/ss%20javascript%20operasi%20switch2.png)
 
 ### Latihan looping for
 ![ALT text](https://github.com/samryn/praktikum-javascript/blob/main/ss%20javascript/ss%20javascript%20looping%20for.png)
